@@ -1,0 +1,5 @@
+{
+  "semaine": ["Semaine 1", "Semaine 2", "Semaine 3", "Semaine 4", "Semaine 5", "Semaine 6", "Semaine 7"],
+  "groupe": ["G1A","G1B","G2A","G2B","G3A","G3B","G4A","G4B","G5A","G5B"],
+  "jour": ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"]
+}
