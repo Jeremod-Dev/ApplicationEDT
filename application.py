@@ -7,7 +7,7 @@ class Application:
         
     
     def validationMenu(self):
-        semaineValide, jourValide, groupeValide = False, False, False
+        semaineValide, jourValide, groupeValide, erreurSaisi = False, False, False, False
         print("================")
         print("L'utilisateur a selectionné la semaine " + self.__semaine())
         print("L'utilisateur a selectionné le jour " + self.__jour())
@@ -30,4 +30,6 @@ class Application:
                     groupeValide = True
                     break
             if ((not semaineValide) or (not jourValide) or (not groupeValide)):
+                erreurSaisi = True
                 print("Une erreur de selection de parametre detecté")
+        return erreurSaisi

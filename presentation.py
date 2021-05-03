@@ -22,6 +22,12 @@ class IHM:
         labelMenu.place(x=250,y=50)
         edt.place(x=0,y=0)
 
+    def erreurParametre(self, typeError):
+        if typeError == "saisi":
+            self.labelErreurParametre.config(text="Saisi des parametres invalides")
+        if typeError == "incomplet":
+            self.labelErreurParametre.config(text="Saisi des parametres incompletes")
+
     def getSemaine(self):
         return self.listeSemaine.get()
 
@@ -33,12 +39,16 @@ class IHM:
 
     def getValidation(self):
         validation = application.Application(self.getSemaine, self.getJour,self.getGroupe)
-        validation.validationMenu()
+        if (validation.validationMenu()):
+            self.erreurParametre(typeError)
 
     def containerMenu(self, txtFont):
         menu = Frame(self.fenetre, background="#dcedc8", width=200, height=500)
         labelMenu = ttk.Label(menu, text="Menu",background="#dcedc8", font=txtFont)
         labelMenu.place(x=65,y=80)
+
+        self.labelErreurParametre = ttk.Label(menu, text="",background="#dcedc8",)
+        self.labelErreurParametre.place(x=10,y=107)
 
         self.listeSemaine = ttk.Combobox(menu, values=donnees.data["semaine"])
         self.listeSemaine.set("Numero de la Semaine")
