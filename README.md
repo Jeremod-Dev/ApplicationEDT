@@ -1,7 +1,7 @@
 # Application de Bureau
 *L'application permet à un utilisateur de récuperer les cours de la journée*
 
-Dans le cadre du projet tuteuré, mon groupe et moi meme avons développé une API permettant de recuperer et comprendre notre EDT. J'ai fait le choix de développer une application de bureau avec une interface humain-machine afin de montrer une utilisation possible de l'API. J'ai choisi une fois de plus le langage python pour développer l’application. Avant même de commencer le code, j'ai composé une maquette de l’application pour connaître les différents composants et leur position. Pour conserver une certaine cohérence, la charte graphique de l’application reprend celle du site de l’université, www.unilim.fr.
+Dans le cadre du projet tuteuré [disponible ici](https://github.com/xernois/edt-bot-iut), mon groupe et moi meme avons développé une API permettant de recuperer et comprendre notre EDT. J'ai fait le choix de développer une application de bureau avec une interface humain-machine afin de montrer une utilisation possible de l'API. J'ai choisi une fois de plus le langage python pour développer l’application. Avant même de commencer le code, j'ai composé une maquette de l’application pour connaître les différents composants et leur position. Pour conserver une certaine cohérence, la charte graphique de l’application reprend celle du site de l’université, www.unilim.fr.
 
 ![Maquette de l'application](maquette.PNG)
 
